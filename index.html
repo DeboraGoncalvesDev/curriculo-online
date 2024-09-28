@@ -1,117 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo Profissional</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-        .section-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .contact-info {
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      margin: 0;
+      height: 100vh;
+    }
+    .left-section {
+      background-color: #A1D2CE;
+      width: 300px;
+      height: 100%;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    .right-section {
+      margin-left: 300px;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100%;
+    }
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .contact-info {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .left-section {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 20px;
+      }
+      .right-section {
+        margin-left: 0;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="container mt-5">
-    <!-- Header -->
-    <div class="row text-center">
-        <div class="col-md-4 offset-md-4">
-            <img src="path_to_profile_image.jpg" alt="Foto de Perfil" class="profile-image">
-            <h1>Seu Nome</h1>
-            <p class="text-muted">Desenvolvedor Full-Stack | Especialista em JavaScript e TypeScript</p>
-        </div>
-    </div>
+<div class="left-section">
+  <!-- Header -->
+  <div class="text-center">
+    <img src="path_to_profile_image.jpg" alt="Foto de Perfil" class="profile-image">
+    <h1>Débora Gonçalves</h1>
+    <p class="text-muted">Desenvolvedor Front-End</p>
+  </div>
 
-    <!-- Contato -->
-    <div class="row text-center contact-info">
-        <div class="col-md-4 offset-md-4">
-            <p><strong>Email:</strong> seuemail@example.com</p>
-            <p><strong>Telefone:</strong> (XX) XXXXX-XXXX</p>
-            <p><strong>LinkedIn:</strong> linkedin.com/in/seunome</p>
-        </div>
-    </div>
+  <!-- Contato -->
+  <div class="contact-info text-center">
+    <p><strong>Email:</strong> s.goncalves.debora@gmail.com</p>
+    <p><strong>Telefone:</strong> (51) 98983-3848</p>
+    <p><strong>LinkedIn:</strong> www.linkedin.com/in/débora-santos-841894203</p>
+  </div>
+</div>
 
+<div class="right-section">
+  <div class="content">
     <!-- Seção de Experiência -->
-    <div class="row">
-        <div class="col-md-12">
-            <h2 class="section-title">Experiência Profissional</h2>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Desenvolvedor Full-Stack</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Empresa XYZ - Janeiro 2020 até o presente</h6>
-                    <p class="card-text">Descrição das suas responsabilidades e projetos desenvolvidos na empresa.</p>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Desenvolvedor Front-End</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Empresa ABC - Fevereiro 2018 até Dezembro 2019</h6>
-                    <p class="card-text">Descrição das suas responsabilidades e projetos desenvolvidos na empresa.</p>
-                </div>
-            </div>
-        </div>
+    <h2 class="section-title">Experiência Profissional</h2>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Analista de suporte N1</h5>
+        <h6 class="card-subtitle mb-2 text-muted">KingHost - 07/2021 - 09/2022</h6>
+        <p class="card-text">
+          Suporte técnico humanizado aos clientes nos canais de atendimento da empresa. <br>
+          Nível técnico: <br>
+          - Hosting: DNS, Certificado SSL, Registro de domínios, FTP; <br>
+          - KingHost: Painel de controle, Criador de sites, Email marketing, Spaminator; <br>
+          - CMS: Wordpress, Magento, Joomla, Moodle; <br>
+          - Banco de dados MySQL; <br>
+          - Emails: Servidores SMTP, POP, IMAP. Configuração MX/SPF e softwares; <br>
+          - Monitoramento de incidentes buscando padrões para agilizar soluções.
+        </p>
+      </div>
     </div>
 
     <!-- Seção de Educação -->
-    <div class="row">
-        <div class="col-md-12">
-            <h2 class="section-title">Educação</h2>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <h5>Graduação em Ciência da Computação</h5>
-                    <p>Universidade XPTO - Concluído em 2017</p>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <h2 class="section-title">Educação</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">
+        <h5>Análise e Desenvolvimento de Sistemas</h5>
+        <p>Tecnólogo - Centro Universitário Leonardo da Vinci – 01/2022 início - 12/2025 previsão de término</p>
+      </li>
+    </ul>
 
     <!-- Seção de Habilidades -->
+    <h2 class="section-title">Habilidades</h2>
     <div class="row">
-        <div class="col-md-12">
-            <h2 class="section-title">Habilidades</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <ul class="list-group">
-                        <li class="list-group-item">HTML5</li>
-                        <li class="list-group-item">CSS3</li>
-                        <li class="list-group-item">JavaScript</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-group">
-                        <li class="list-group-item">TypeScript</li>
-                        <li class="list-group-item">React</li>
-                        <li class="list-group-item">Node.js</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-group">
-                        <li class="list-group-item">Git</li>
-                        <li class="list-group-item">MongoDB</li>
-                        <li class="list-group-item">SQL</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item">HTML5</li>
+          <li class="list-group-item">CSS3</li>
+          <li class="list-group-item">JavaScript</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item">TypeScript</li>
+          <li class="list-group-item">React</li>
+          <li class="list-group-item">VueJs</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item">Git</li>
+          <li class="list-group-item">Figma</li>
+          <li class="list-group-item">Visual Studio Code</li>
+        </ul>
+      </div>
     </div>
-
+  </div>
 </div>
 
 <!-- Bootstrap JS and dependencies -->
